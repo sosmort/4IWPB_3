@@ -8,7 +8,7 @@ body {
     text-align: center;
     font-size: 12px;
     color: #374448;
-    font-family: "Open Sans","Helvetica Neue",Helvetica,Arial,sans-serif;
+    font-family: "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
     background-color: #fff;
 }
 
@@ -52,8 +52,7 @@ img {
 
 /** BEGIN wrapper **/
 .wrapper {
-    max-width: 1200px;
-    margin: auto;
+
     text-align: left;
     padding: 0 7px;
 }
@@ -141,16 +140,24 @@ img {
     background-color: #DC1000;
 }
 
-.header {}
 
 /** END header **/
-.main{
+.pub {
+    margin-top: 35px;
     display: flex;
+    justify-content: center;
+}
+
+.main {
+    display: flex;
+    max-width: 1020px;
+    margin: auto;
+    margin-top: 50px;
 }
 
 /** BEGIN content **/
 .content {
-    width: 66%;
+    width: 70%;
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
@@ -176,13 +183,15 @@ img {
     margin-bottom: 0.5em;
     font-size: 20px;
 }
+
 .news__article {
     display: inline-block;
     width: 48.388%;
     margin-right: 2.56%;
     margin-bottom: 40px;
     vertical-align: top;
-  }
+}
+
 .content .post .date {
     display: block;
     margin-right: 20px;
@@ -202,10 +211,9 @@ img {
     width: 326px;
     height: 177px;
     overflow: hidden;
-    padding: 5px;
-    background-color: #EEEEEE;
     border: 1px solid #E8E8E8;
     margin-bottom: 10px;
+    overflow: hidden;
 }
 
 
@@ -213,19 +221,27 @@ img {
 .content .post .thumb img {
     width: 100%;
     height: 100%;
+    transform: scale(1);
+    transition: all .2s ease-in;
 }
 
-.read_more{
+.content .post .thumb img:hover {
+    transform: scale(1.1);
+    transition: all .2s ease-in;
+}
+
+.read_more {
     display: block;
     box-sizing: border-box;
     font-size: 16px;
     line-height: 22.4px;
     word-spacing: 0px;
     margin: 50px auto;
-   
+
     color: #374448;
     transition: all 0.2s ease-out;
 }
+
 .center {
     text-align: center;
     font-family: monospace;
@@ -263,9 +279,12 @@ img {
 
 /** BEGIN sidebar **/
 .sidebar {
-    width: 34%;
-    float: right;
+    width: 300px;
+    padding: 15px;
+    height: auto;
     padding-bottom: 20px;
+    background-color: #F7F7F7;
+    margin-top: 20px;
 }
 
 .sidebar .wrapper {
@@ -273,103 +292,43 @@ img {
 }
 
 .sidebar h2 {
-    color: #252525;
-    font-size: 0.9em;
-    text-transform: uppercase;
-    margin: 15px 0 10px;
+    margin: 0 0 25px;
+    padding: 0 0 15px;
+    border-bottom: 2px solid #bbbbbe;
+    font-size: 20px;
 }
 
-.sidebar ul {
-    list-style-type: none;
+.media {
+    display: flex;
+    column-gap: 26px;
 }
 
-.sidebar ul li {
-    border-bottom: 1px dotted #DADADA;
-    line-height: 1.4em;
-    padding: 4px 0;
-    font-size: 0.9em;
+.media h3 {
+    color: #B5115D;
+    font-size: 16px;
+    line-height: 22.4px;
+    font-weight: 400;
+    cursor: pointer;
+}
+.media h3:hover {
+    text-decoration: underline;
 }
 
-.sidebar ul li a {
-    color: #808080;
+.pub1 {
+    height: 60px;
+    align-self: center;
 }
 
-.sidebar ul li a:hover {
-    color: #DC1000;
+.pub1 img {
+    height: 100%;
+}
+.pub2 {
+    margin-top: 60px;
+    height: 50px;
 }
 
-.sidebar .ads {
-    text-align: center;
-    padding: 10px 0;
-}
-
-.sidebar .ads img {
-    margin: 3px;
-}
-
-.sidebar .search {
-    background: #EEEEEE url(images/search.gif) no-repeat center center;
-    border-width: 1px 0;
-    border-color: #E8E8E8;
-    border-style: solid;
-    height: 52px;
-}
-
-.sidebar .search input {
-    float: left;
-    border: 0;
-    font-size: 1.2em;
-    font-family: Verdana;
-    width: 200px;
-    margin: 18px 11px 0 22px;
-}
-
-.sidebar .search button {
-    float: left;
-    border: 0;
-    text-indent: -9999px;
-    width: 53px;
-    height: 32px;
-    margin-top: 10px;
-    background-color: transparent;
-}
-
-
-.sidebar .flickr img {
-    margin: 3px;
-}
-
-.sidebar .video {
-    padding-bottom: 5px;
-}
-
-.sidebar .tags {
-    padding-bottom: 5px;
-}
-
-.sidebar .tags a {
-    color: #808080;
-}
-
-.sidebar .tags a:hover {
-    color: #DC1000;
-}
-
-.sidebar .l {
-    float: left;
-    width: 125px;
-}
-
-.sidebar .r {
-    float: right;
-    width: 125px;
-}
-
-.sidebar .sbar li {
-    font-size: 1em;
-    padding-left: 12px;
-    background: url(images/bullet.gif) no-repeat 0 8px;
-    border: 0;
+.pub2 img {
+    width: 100%;
 }
 
 /** END sidebar **/
@@ -572,4 +531,3 @@ h2.title {
     border-color: #000000;
     text-decoration: none;
 }
-
