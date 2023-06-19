@@ -1,0 +1,533 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    text-align: center;
+    font-size: 12px;
+    color: #374448;
+    font-family: "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+    background-color: #fff;
+}
+
+a {
+    color: #dc1000;
+    text-decoration: none;
+}
+
+a:hover {
+    color: #000000;
+}
+
+img {
+    border: 0;
+}
+
+.break {
+    font-size: 0;
+    width: 0;
+    height: 0;
+    clear: both;
+}
+
+.alignleft {
+    float: left;
+    margin: 4px 10px 5px 0;
+}
+
+.alignright {
+    float: right;
+    margin: 4px 0 5px 10px;
+}
+
+.aligncenter {
+    text-align: center;
+}
+
+.hidden {
+    display: none;
+}
+
+/** BEGIN wrapper **/
+.wrapper {
+
+    text-align: left;
+    padding: 0 7px;
+}
+
+/** END wrapper **/
+
+/** BEGIN header **/
+.header {
+    background: #ffffff url(images/header.gif) repeat-x 0 0;
+}
+
+.header ul {
+    float: left;
+    list-style-type: none;
+    padding: 10px 0;
+    margin-left: -5px;
+}
+
+.header ul li {
+    float: left;
+    text-transform: uppercase;
+    font-size: 0.9em;
+    padding: 0 15px;
+    border-left: 1px solid #252525;
+}
+
+.header ul li.f {
+    border: 0;
+}
+
+.header .links {
+    float: right;
+    font-size: 0.9em;
+    color: #252525;
+    padding: 10px;
+}
+
+.header .links a {
+    margin-left: 14px;
+}
+
+.header .logo {
+    padding: 18px 18px 40px;
+    float: left;
+}
+
+.header .logo h1 {
+    font-family: "Lucida Sans";
+    font-size: 2.5em;
+    text-transform: uppercase;
+}
+
+.header .logo h1 a {
+    color: #252525;
+}
+
+.header .logo p {
+    color: #DE2011;
+    font-weight: bold;
+    padding-left: 10px;
+}
+
+.header .ad468x60 {
+    float: right;
+    padding: 16px 10px;
+}
+
+.header ol {
+    list-style-type: none;
+    height: 35px;
+    background-color: #252525;
+}
+
+.header ol li {
+    float: left
+}
+
+.header ol li a {
+    color: #ffffff;
+    display: block;
+    padding: 10px 12px 11px;
+}
+
+.header ol li a:hover {
+    background-color: #DC1000;
+}
+
+
+/** END header **/
+.pub {
+    margin-top: 35px;
+    display: flex;
+    justify-content: center;
+}
+
+.main {
+    display: flex;
+    max-width: 1020px;
+    margin: auto;
+    margin-top: 50px;
+}
+
+/** BEGIN content **/
+.content {
+    width: 70%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+.content .post {
+    width: 340px;
+    float: left;
+    padding: 20px 15px 0 35px;
+}
+
+.content .post h2 {
+    margin-top: 0;
+    margin-bottom: 0.5em;
+    font-size: 20px;
+    min-height: 106.4px;
+}
+
+.content .post h2 a {
+    color: #EB1F7C;
+    margin-top: 0;
+    margin-bottom: 0.5em;
+    font-size: 20px;
+}
+
+.news__article {
+    display: inline-block;
+    width: 48.388%;
+    margin-right: 2.56%;
+    margin-bottom: 40px;
+    vertical-align: top;
+}
+
+.content .post .date {
+    display: block;
+    margin-right: 20px;
+    font-size: 16px;
+    font-weight: normal;
+    color: #374448;
+}
+
+
+
+.content .post p {
+    margin-bottom: 10px;
+    line-height: 1.4em;
+}
+
+.content .post .thumb {
+    width: 326px;
+    height: 177px;
+    overflow: hidden;
+    border: 1px solid #E8E8E8;
+    margin-bottom: 10px;
+    overflow: hidden;
+}
+
+
+
+.content .post .thumb img {
+    width: 100%;
+    height: 100%;
+    transform: scale(1);
+    transition: all .2s ease-in;
+}
+
+.content .post .thumb img:hover {
+    transform: scale(1.1);
+    transition: all .2s ease-in;
+}
+
+.read_more {
+    display: block;
+    box-sizing: border-box;
+    font-size: 16px;
+    line-height: 22.4px;
+    word-spacing: 0px;
+    margin: 50px auto;
+
+    color: #374448;
+    transition: all 0.2s ease-out;
+}
+
+.center {
+    text-align: center;
+    font-family: monospace;
+}
+
+.pagination {
+    display: inline-block;
+}
+
+.pagination a {
+    color: #000000;
+    float: left;
+    padding: 8px 16px;
+    text-decoration: none;
+    transition: background-color .5s;
+    border: 1px solid;
+    margin: 0 4px;
+    font-size: 20px;
+    margin: 5px 0 5px -1px;
+}
+
+.pagination a.active {
+    border-top: transparent;
+    border-bottom: transparent;
+}
+
+.pagination a:hover:not(.active) {
+    border-color: #EB1F7C;
+    text-decoration: none;
+    color: white;
+    background-color: #EB1F7C;
+}
+
+/** END content **/
+
+/** BEGIN sidebar **/
+.sidebar {
+    width: 300px;
+    padding: 15px;
+    height: auto;
+    padding-bottom: 20px;
+    background-color: #F7F7F7;
+    margin-top: 20px;
+}
+
+.sidebar .wrapper {
+    padding: 0 15px;
+}
+
+.sidebar h2 {
+    margin: 0 0 25px;
+    padding: 0 0 15px;
+    border-bottom: 2px solid #bbbbbe;
+    font-size: 20px;
+}
+
+.media {
+    display: flex;
+    column-gap: 26px;
+}
+
+.media h3 {
+    color: #B5115D;
+    font-size: 16px;
+    line-height: 22.4px;
+    font-weight: 400;
+    cursor: pointer;
+}
+.media h3:hover {
+    text-decoration: underline;
+}
+
+.pub1 {
+    height: 60px;
+    align-self: center;
+}
+
+.pub1 img {
+    height: 100%;
+}
+.pub2 {
+    margin-top: 60px;
+    height: 50px;
+}
+
+.pub2 img {
+    width: 100%;
+}
+
+/** END sidebar **/
+
+/** BEGIN footer **/
+.footer {
+    clear: both;
+    background-color: #252525;
+    color: #ffffff;
+    font-family: Georgia;
+    padding: 30px;
+}
+
+.footer p {
+    line-height: 1.5em;
+}
+
+/** END footer **/
+
+/** BEGIN miscellaneous **/
+.comments {
+    padding: 0 35px 20px;
+}
+
+.comments h2 {
+    margin: 20px 0 5px;
+    font-size: 1.5em;
+    font-weight: normal;
+}
+
+.comments p {
+    margin-bottom: 10px;
+    line-height: 1.5em;
+}
+
+.comments form {
+    padding-top: 20px;
+}
+
+.comments form p {
+    margin-bottom: 5px;
+}
+
+.comments form input,
+textarea {
+    border: 1px solid #cccccc;
+    font-size: 0.9em;
+    font-family: Verdana;
+    padding: 4px;
+    background-position: 4px 4px;
+    background-repeat: no-repeat;
+}
+
+.comments form input {
+    width: 260px;
+    border: 1px solid #cccccc;
+}
+
+.comments form textarea {
+    width: 350px;
+    padding: 4px 4px !important;
+    border: 1px solid #cccccc;
+}
+
+.comments form button {
+    border: 1px solid #909090;
+    background-color: #cccccc;
+    font-size: 0.9em;
+    font-family: Verdana;
+    width: 120px;
+    height: 23px;
+}
+
+.commentdetails {
+    margin-top: 25px;
+}
+
+.commentauthor {
+    margin-bottom: 5px !important;
+    font-weight: bold;
+}
+
+.commentdate {
+    font-size: 0.8em;
+    margin-bottom: 5px;
+    color: #909090;
+}
+
+.required {
+    color: #ff0000;
+}
+
+h2.title {
+    font-size: 1em;
+    text-transform: uppercase;
+    padding: 25px 35px 0;
+    color: #565656;
+}
+
+.single {
+    padding: 20px 35px;
+}
+
+.single h2 {
+    font-family: Georgia;
+    font-size: 1.5em;
+    margin-bottom: 15px;
+}
+
+
+.single h3 {
+    font-size: 1.5em;
+    font-weight: normal;
+    margin-bottom: 7px;
+}
+
+.single p {
+    line-height: 1.4em;
+    margin-bottom: 10px;
+}
+
+.single ul {
+    margin: 0 0 10px 16px;
+}
+
+.single ol {
+    margin: 0 0 10px 18px;
+}
+
+.single li {
+    line-height: 1.4em;
+    padding: 2px 0;
+}
+
+.single blockquote {
+    padding: 10px 10px 5px;
+    margin-bottom: 10px;
+    background-color: #eeeeee;
+    border-width: 1px 0;
+    border-style: solid;
+    border-color: #e8e8e8;
+}
+
+/** END miscellaneous **/
+
+/** BEGIN wordpress 2.7 comments **/
+.comments ol {
+    list-style-type: none;
+    clear: both;
+    padding: 0;
+    margin: 0;
+}
+
+.comments ol li {
+    padding: 10px;
+    border: 1px solid #e0e0e0;
+    margin-bottom: 10px;
+
+}
+
+.comments ol li .avatar {
+    float: right;
+}
+
+
+.comments ol li .comment-author .fn {
+    font-weight: bold;
+    font-size: 1.2em;
+}
+
+.comments ol li .comment-meta {
+    font-size: 0.9em;
+    color: #999999;
+    margin: 5px 0 10px;
+}
+
+.comments ol li .reply {
+    font-size: 0.9em;
+    font-weight: bold;
+    padding-bottom: 10px;
+}
+
+.comments .children {
+    list-style-type: none;
+}
+
+.comments .navigation {
+    padding: 10px 0 20px;
+    font-size: 0.9em;
+}
+
+.comments .navigation a {
+    color: #999999;
+    padding: 3px 8px;
+    border: 1px solid #cccccc;
+}
+
+.comments .navigation a:hover {
+    color: #000000;
+    border-color: #000000;
+    text-decoration: none;
+}
