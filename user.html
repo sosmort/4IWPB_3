@@ -4,20 +4,19 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title> BX1, La chaîne d'info de Bruxelles</title>
-    <link rel="icon" type="image/x-icon" href="images/favicon-32x32.png">
+    <link rel="icon" type="image/x-icon" href="media/favicon-32x32.png">
     <script src="https://code.iconify.design/iconify-icon/1.0.1/iconify-icon.min.js"></script>
     <link rel="stylesheet"
         href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
-    <link rel="stylesheet" href="style.css">
-    <title>Document</title>
+    <link rel="stylesheet" href="main.css">
+    <title>Profile</title>
 </head>
 
 <body>
 
     <!-- BEGIN wrapper -->
     <div class="wrapper" style="margin-top: 50px;">
-        <div class="top_header" style="max-width: 1020px; margin-bottom: 20px;">
+        <nav class="top_header" style="max-width: 1020px; margin-bottom: 20px;">
 
             <div style="display: flex;">
                 <div class="hamburger-menu">
@@ -29,7 +28,8 @@
 
 
                     <ul class="menu__box">
-                        <li><a class="menu__item" href="#">acceuil</a></li>
+                      <li><a class="menu__item" href="index.html">acceuil</a></li>
+                        <li><a class="menu__item" href="user.html">profile</a></li>
                         <!-- <li><a class="menu__item" href="#">tv</a></li> -->
                         <input type="checkbox" id="categorie_check" checked>
                         <label for="categorie_check" class="categorie">
@@ -121,13 +121,13 @@
 
                 </div>
                 <a href="#" class="logo">
-                    <img src="images/logo.png" alt="">
+                    <img src="media/logo.png" alt="">
                 </a>
             </div>
             <div class="meteo">
                 <ul>
                     <li class="meteo__block">
-                        <img src="images/meteo1.png" alt="meteo" style="height: 80px !important;">
+                        <img src="media/meteo1.png" alt="meteo" style="height: 80px !important;">
                     </li>
                     <li class="meteo__block meteo__block--now">
                         <span class="meteo__block__date">En ce moment</span>
@@ -160,10 +160,10 @@
                 </div>
             </div>
             
-        </div>
+        </nav>
         
         <!-- BEGIN header -->
-        <div class="header">
+        <header class="header">
 
             <nav class="second_nav">
                 <ol>
@@ -192,13 +192,10 @@
 
             </nav>
 
-        </div>
+        </header>
         <!-- END header -->
         
-        <!-- BEGIN pub gif -->
         
-        
-        <!-- END pub gif -->
         <div class="main">
             
             <!-- BEGIN content -->
@@ -285,7 +282,7 @@
         
         
         <!-- BEGIN footer -->
-        <div class="pg-footer">
+        <footer class="pg-footer">
             <footer class="footer">
               <svg class="footer-wave-svg" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 100" preserveAspectRatio="none">
                 <path class="footer-wave-path" d="M851.8,100c125,0,288.3-45,348.2-64V0H0v44c3.7-1,7.3-1.9,11-2.9C80.7,22,151.7,10.8,223.5,6.3C276.7,2.9,330,4,383,9.8 c52.2,5.7,103.3,16.2,153.4,32.8C623.9,71.3,726.8,100,851.8,100z"></path>
@@ -388,7 +385,7 @@
               </div>
               
             </footer>
-          </div>
+        </footer>
         <!-- END footer -->
     </div>
     <!-- END wrapper -->

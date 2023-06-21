@@ -662,10 +662,10 @@ img {
 
 /** END header **/
 .pub {
-    margin-top: 35px;
+    margin: 50px auto;
     display: flex;
     justify-content: center;
-    height: 150px;
+    height: 140px;
 }
 
 .main {
@@ -701,12 +701,14 @@ img {
     font-size: 20px;
     min-height: 106.4px;
 }
-
 .content .post h2 a {
     color: #EB1F7C;
     margin-top: 0;
     margin-bottom: 0.5em;
     font-size: 20px;
+}
+.content .post a:hover {
+    text-decoration : underline solid #EB1F7C;
 }
 
 .news__article {
@@ -1427,8 +1429,7 @@ h2.title {
     padding: 25px 30px;
     border-radius: 5px;
     box-shadow: 0 5px 10px rgba(0, 0, 0, 0.6);
-    margin: 0 auto;
-    margin-bottom: 40px;
+    margin: 6rem auto;
 }
 
 .container_c .title {
@@ -1580,14 +1581,12 @@ form .button input:hover {
     }
 }
 
-/* fd */
-
 
 /* article */
 
   
   
-  .magazine {
+  .article-content {
     margin: 0 auto;
     padding: 0;
     width: 100%;
@@ -1596,19 +1595,20 @@ form .button input:hover {
     grid-template-columns: 1fr 9fr 1fr;
     gap: 1.5em;
     background-color: #ffffff;
-    padding: 3rem 5px;
+    padding: 0 5px;
+    padding-bottom: 6rem;
     border-radius: 8px;
     font-family: "Google Sans", sans-serif;
   }
   
   @media screen and (max-width: 768px) {
-    .magazine {
+    .article-content {
       grid-template-columns: auto 1fr auto;
       gap: 1em;
     }
   }
   
-  .magazine__title {
+  .title-article-content {
     box-sizing: border-box;
     margin: 0;
     padding: 0;
@@ -1616,129 +1616,36 @@ form .button input:hover {
 
   }
   
-  .magazine__title_place_top {
+  /* .title-article-content h1{
     box-sizing: border-box;
     margin: 0 0 -30px;
     padding: 0;
     display: block;
     text-align: center;
     font-family: 'Uchen', serif;
-    font-size: 32px;
+    font-size: 100px;
     font-weight: 600;
     line-height: 1.5;
     text-transform: uppercase;
-  }
-  
-  .magazine__title_place_middle {
-    box-sizing: border-box;
-    margin: 0;
-    padding: 0 15px;
-    display: inline-block;
-    text-align: center;
-    font-size: 24px;
-    font-weight: 600;
-    line-height: 1.5;
-    text-transform: uppercase;
-    transform: translateY(50%);
-    background-color: #eef5f8;
-  }
-  
-  .magazine__title_place_bottom {
-    box-sizing: border-box;
-    margin: 0;
-    padding: 0;
-    display: block;
-    text-align: center;
-    font-family: 'Merriweather', serif;
-    font-size: 50px;
-    font-weight: 900;
-    line-height: 1.5;
-    letter-spacing: 4px;
-    text-transform: uppercase;
-    text-shadow:  0 -4px 1px #fff;
-    border-top: 1px solid #000;
-    border-bottom: 1px solid #000;
-  }
-  
-  .magazine__citation {
-    margin: 0;
-    padding: 0;
-    grid-column: 2;
-    font-size: 16px;
-    
-    text-align: center;
-  }
-  
-  .magazine__aside {
-    margin: 0;
-    padding: 0;
-    grid-column: 1;
-  }
-  
-  @media screen and (max-width: 768px) {
-    .magazine__aside {
-      margin-top: 1em;
-      grid-column: 2;
-    }
-  }
-  
-  .magazine__aside-para {
-    box-sizing: border-box;
-    margin: 0;
-    padding: 0 5px 0 0;
-    font-style: italic;
-    color: #1c629e;
-    background-color: #e3f5ff;
-    background-image: linear-gradient(to right, #e3f5ff 0% 40%, #fff 60% 100%);
-    text-align: right;
-    border-right: 4px solid #1c629e;
-  }
-  
-  @media screen and (max-width: 768px) {
-    .magazine__aside-para {
-      padding: 0 0 0 5px;
-      text-align: justify;
-      background-image: linear-gradient(to left, #e3f5ff 0% 40%, #fff 60% 100%);
-      border-left: 4px solid #1c629e;
-      border-right: none;
-    }
-  }
-  
-  .magazine__main-content {
+  } */
+
+  .main-article-content {
     margin: 0;
     padding: 0;
     grid-column: 2;
     background-color: #fff;
   }
-  .magazine__main-content h3{
+  .main-article-content h3{
     margin: 2rem 0;
   
   }
-  .magazine__main-content h3{
-    margin: 2rem 0;
-  
-  }
-  .magazine__main-content p{
+
+  .main-article-content p{
     line-height: 1.5rem;
   
   }
   
-  .magazine__para {
-    margin: 0;
-    padding: 0;
-    text-align: justify;
-  }
   
-  .magazine__para + .magazine__para {
-    margin-top: 20px;
-  }
-  
-  .magazine__para-first-letter {
-    font-family: 'Uchen', serif;
-    font-size: 24px;
-    font-weight: 600;
-    line-height: 1;
-  }
   
   .figure {
     margin: 0;
@@ -1750,96 +1657,11 @@ form .button input:hover {
     overflow: hidden;
   }
   
-  .figure__img {
+  .figure-image {
     margin: 0;
     padding: 0;
     width: 100%;
     height: 100%;
     object-fit: cover;
     outline: 1px solid #fff;
-  }
-  
-  .figure__caption {
-    margin: 0;
-    padding: 5px 15px;
-    position: absolute;
-    bottom: -35px;
-    width: 100%;
-    background-color: rgba(255, 255, 255, 0.8);
-    transition: all 0.3s ease-in;
-  }
-  
-  .figure:hover .figure__caption {
-    bottom: 0;
-  }
-  
-  .gallery {
-    margin: 0;
-    padding: 0;
-    grid-column: 2;
-  }
-  
-  .gallery__title {
-    margin: 0;
-    padding: 5px 0 5px 10px;
-    font-family: 'Uchen', serif;
-    font-size: 24px;
-    font-weight: 600;
-    line-height: 1.5;
-    text-transform: uppercase;
-    color: #1c629e;
-    background-color: #e3f5ff; 
-    background-image: linear-gradient(to left, #e3f5ff 0% 40%, #fff 60% 100%);
-    border-left: 4px solid #1c629e;
-  }
-  
-  .photo-grid {
-    margin: 0;
-    padding: 0;
-    display: grid;
-    gap: 5px;
-    grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
-    grid-auto-rows: 140px;
-    grid-auto-flow: dense;
-    list-style: none;
-  }
-  
-  .photo-grid__item {
-    margin: 0;
-    padding: 0;
-    grid-column: span 1;
-  }
-  
-  .photo-grid__item_pos_horizontal {
-    grid-column: span 2;
-  }
-  
-  @media screen and (max-width: 768px) {
-    .photo-grid__item_pos_horizontal {
-      grid-column: span 1;
-      grid-row: span 1;
-    }
-  }
-  
-  .photo-grid__item_pos_vertical {
-    grid-column: span 1;
-    grid-row: span 2;
-  }
-  
-  @media screen and (max-width: 768px) {
-    .photo-grid__item_pos_vertical {
-      grid-column: span 1;
-      grid-row: span 1;
-    }
-  }
-  
-  .photo-grid__img {
-    box-sizing: border-box;
-    margin: 0;
-    padding: 0;
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    outline: 1px solid #fff;
-    outline-offset: -5px;
   }
